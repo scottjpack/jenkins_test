@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request, abort
 
 app = Flask(__name__)
 
+#Set up API for Add
 @app.route('/api/v1.0/add', methods=['POST'])
 def add():
     if not request.json or not 'x' in request.json or not 'y' in request.json:
