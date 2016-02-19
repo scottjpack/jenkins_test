@@ -14,7 +14,7 @@ def add():
 
 @app.route('/index.html')
 def health_check():
-    return "Ready to rumble!\n"
+    return "Hammer time!\n"
 
 if __name__ == '__main__':
     # If threaded=True isn't set, browser requesting /index.html and the favicon at the same time makes it explode into fiery pieces.
