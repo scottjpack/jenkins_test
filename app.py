@@ -12,6 +12,9 @@ def add():
     y = request.json.get('y')
     return jsonify({'val': x+y})
 
+@app.route('/index.html')
+def health_check():
+    return "Ready to rumble!\n"
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=80)
