@@ -2,6 +2,7 @@
 from flask import Flask, jsonify, request, abort
 
 app = Flask(__name__)
+app.debug = True
 
 #Set up API for Add function endpoint
 @app.route('/api/v1.0/add', methods=['POST'])
