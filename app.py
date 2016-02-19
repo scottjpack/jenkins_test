@@ -14,7 +14,7 @@ def add():
 
 @app.route('/index.html')
 def health_check():
-    return "Boom baby!\n"
+    return """<img src="https://49.media.tumblr.com/3e52fc75e8d076013960ee1f8cf44c90/tumblr_n11xuyVC1k1s8hnhko1_500.gif" alt="Boom Baby!">"""
 
 if __name__ == '__main__':
     # If threaded=True isn't set, browser requesting /index.html and the favicon at the same time makes it explode into fiery pieces.
